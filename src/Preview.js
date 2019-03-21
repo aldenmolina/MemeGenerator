@@ -2,7 +2,12 @@ import React, { Component } from "react";
 
 class Preview extends Component {
   render() {
-    return <div />;
+    const { currentImg } = this.props;
+    return (
+      <div class="preview">
+        <img src={currentImg} />
+      </div>
+    );
   }
 }
 
