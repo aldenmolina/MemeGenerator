@@ -10,17 +10,18 @@ class InputText extends Component {
   render() {
     const { topText, bottomText } = this.props;
     return (
-      <>
-        <label>
-          Text:
-          <input type="text" value={topText} onChange={this.onTopTextChange} />
+      <div className="text-field">
+          <input 
+            type="text" 
+            value={topText} 
+            onChange={this.onTopTextChange} 
+          />
           <input
             type="text"
             value={bottomText}
             onChange={this.onBottomTextChange}
           />
-        </label>
-      </>
+      </div>
     );
   }
 }

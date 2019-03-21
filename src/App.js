@@ -31,8 +31,7 @@ class App extends Component {
 
   render() {
     return (
-      <div class="container">
-        <header>Meme Generator</header>
+      <div className="container">
         <main>
           <ThumbnailPicker
             thumbnails={this.state.thumbnails}
@@ -51,7 +50,6 @@ class App extends Component {
             setBottomText={this.setBottomText}
           />
         </main>
-        <footer />
       </div>
     );
   }
