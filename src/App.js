@@ -29,8 +29,8 @@ class App extends Component {
             setImage={this.setImage}
           />
           <Preview
-            thumbnails={this.state.thumbnails}
-            currentImg={this.state.currentImg}
+          // thumbnails={this.state.thumbnails}
+          // currentImg={this.state.currentImg}
           />
         </main>
         <footer />
