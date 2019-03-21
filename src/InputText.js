@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 
 class InputText extends Component {
-  onTextChange = e => {
+  onTopTextChange = e => {
     this.props.setTopText(e.target.value);
+  };
+  onBottomTextChange = e => {
+    this.props.setBottomText(e.target.value);
   };
   render() {
     const { topText, bottomText } = this.props;
@@ -10,7 +13,12 @@ class InputText extends Component {
       <>
         <label>
           Text:
-          <input type="text" value={topText} onChange={this.onTextChange} />
+          <input type="text" value={topText} onChange={this.onTopTextChange} />
+          <input
+            type="text"
+            value={bottomText}
+            onChange={this.onBottomTextChange}
+          />
         </label>
       </>
     );

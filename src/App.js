@@ -25,6 +25,10 @@ class App extends Component {
   setTopText = text => {
     this.setState({ topText: text });
   };
+  setBottomText = text => {
+    this.setState({ bottomText: text });
+  };
+
   render() {
     return (
       <div class="container">
@@ -44,6 +48,7 @@ class App extends Component {
             topText={this.state.topText}
             bottomText={this.state.bottomText}
             setTopText={this.setTopText}
+            setBottomText={this.setBottomText}
           />
         </main>
         <footer />
