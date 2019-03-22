@@ -5,7 +5,11 @@ class Preview extends Component {
     super();
     this.state = {
       isTopDragging: false,
-      isBottomDragging: false
+      isBottomDragging: false,
+      topTop: 0,
+      topLeft: 0,
+      bottomTop: 0,
+      bottomLeft: 0
     }
   }
 
@@ -19,7 +23,10 @@ class Preview extends Component {
 
   onMouseMove = e => {
     if (this.state.isTopDragging){
-      console.log(e.target);
+      console.log(e);
+      const newTopLeft = this.state.topLeft + e.movementX;
+      const newTopTop = this.state.topTop + e.movementY;
+      this.setState({topLeft: newTopLeft, topTop: newTopTop});
     }
   }
 
@@ -28,7 +35,7 @@ class Preview extends Component {
 
     return (
       <div className="preview-container">
-        <span className="top-text" onMouseDown={this.onMouseDown} onMouseUp={this.onMouseUp} onMouseMove={this.onMouseMove}>{topText}</span>
+        <span className="top-text" style={{left: this.state.topLeft, top: this.state.topTop}} onMouseDown={this.onMouseDown} onMouseUp={this.onMouseUp} onMouseMove={this.onMouseMove}>{topText}</span>
         <img className="preview-img" src={currentImg} />
         <span className="bottom-text">{bottomText}</span>
       </div>
