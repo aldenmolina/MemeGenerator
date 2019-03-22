@@ -11,7 +11,7 @@ class ThumbnailPicker extends Component {
       <img src={item} onClick={this.setPreview} />
     ));
 
-    return <div class="thumbnail-items">{thumbnailItems}</div>;
+    return <div className="thumbnail-items">{thumbnailItems}</div>;
   }
 }
 

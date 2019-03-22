@@ -14,7 +14,7 @@ class InputText extends Component {
           <input 
             type="text" 
             value={topText} 
-            onChange={this.onTopTextChange} 
+            onChange={this.onTopTextChange}
           />
           <input
             type="text"
