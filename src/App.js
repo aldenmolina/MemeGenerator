@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ThumbnailPicker from "./ThumbnailPicker";
 import InputText from "./InputText";
 import Preview from "./Preview";
+import TextStyle from "./TextStyle";
 import "./CSS/App.css";
 
 class App extends Component {
@@ -16,9 +17,18 @@ class App extends Component {
       ],
       currentImg: "/Images/Batman.jpg",
       topText: "Goodbye",
-      bottomText: "Hello"
+      bottomText: "Hello",
+      fontSize: 26
     };
   }
+  increaseFontSize = () => {
+    const newFontSize = this.state.fontSize + 2;
+    this.setState({ fontSize: newFontSize });
+  };
+  decreaseFontSize = () => {
+    const newFontSize = this.state.fontSize - 2;
+    this.setState({ fontSize: newFontSize });
+  };
   setImage = thumbnailIndex => {
     this.setState({ currentImg: thumbnailIndex });
   };
@@ -42,6 +52,12 @@ class App extends Component {
             currentImg={this.state.currentImg}
             topText={this.state.topText}
             bottomText={this.state.bottomText}
+            fontSize={this.state.fontSize}
+            botFontSize={this.state.fontSize}
+          />
+          <TextStyle
+            increaseFontSize={this.increaseFontSize}
+            decreaseFontSize={this.decreaseFontSize}
           />
           <InputText
             topText={this.state.topText}

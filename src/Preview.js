@@ -32,13 +32,15 @@ class Preview extends Component {
   }
 
   render() {
-    const { currentImg, topText, bottomText } = this.props;
+    const { currentImg, topText, bottomText, fontSize } = this.props;
 
     return (
       <div className="preview-container">
-        <span className="top-text" style={{left: this.state.topTextLeft, top: this.state.topTextTop}} onMouseDown={this.onMouseDown} onMouseUp={this.onMouseUp}>{topText}</span>
+        <span className="top-text" style={{left: this.state.topTextLeft, top: this.state.topTextTop, fontSize}} onMouseDown={this.onMouseDown} onMouseUp={this.onMouseUp}>{topText}</span>
         <img className="preview-img" src={currentImg} />
-        <span className="bottom-text">{bottomText}</span>
+        <span className="bottom-text" style={{ fontSize }}>
+          {bottomText}
+        </span>
       </div>
 
       // <div className="preview-image" style={{backgroundImage: `url(${currentImg})`}}>
