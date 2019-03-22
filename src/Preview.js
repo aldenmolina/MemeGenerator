@@ -2,11 +2,13 @@ import React, { Component } from "react";
 
 class Preview extends Component {
   render() {
-    const { currentImg, topText, bottomText } = this.props;
+    const { currentImg, topText, bottomText, fontSize } = this.props;
     console.log(currentImg);
     return (
       <div className="preview-container">
-        <span className="top-text">{topText}</span>
+        <span className="top-text" style={{ fontSize }}>
+          {topText}
+        </span>
         <img className="preview-img" src={currentImg} />
         <span className="bottom-text">{bottomText}</span>
       </div>
