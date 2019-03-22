@@ -11,6 +11,7 @@ html {
 .container {
     display: flex;
     align-items: center;
+    justify-content: center;
     background: #282c34;
     height: 100vh;
 }
@@ -21,6 +22,7 @@ main {
     justify-content: space-around;
     align-items: flex-start;
     width: 100vw;
+    max-width: 1500px;
 }
 
 main div {
@@ -35,6 +37,9 @@ main div {
 .preview-container span {
     color: white;
     font-size: 5rem;
+    width: 100%;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .preview-img {
@@ -57,4 +62,8 @@ main div {
     display: flex;
     flex-direction: column;
     width: 200px;
+}
+
+.text-field input {
+
 }
