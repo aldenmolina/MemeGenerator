@@ -15,6 +15,12 @@ class Preview extends Component {
 
   onMouseDown = e => {
     this.setState({isTopDragging: true});
+
+    // if (this.state.isTopDragging) {
+    //   document.addEventListener("mousemove", function(e){
+    //     console.count();
+    //   });
+    // }
   }
 
   onMouseUp = e => {
@@ -23,7 +29,6 @@ class Preview extends Component {
 
   onMouseMove = e => {
     if (this.state.isTopDragging){
-      console.log(e);
       const newTopLeft = this.state.topLeft + e.movementX;
       const newTopTop = this.state.topTop + e.movementY;
       this.setState({topLeft: newTopLeft, topTop: newTopTop});
