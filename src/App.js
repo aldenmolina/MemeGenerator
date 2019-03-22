@@ -22,11 +22,11 @@ class App extends Component {
     };
   }
   increaseFontSize = () => {
-    const newFontSize = this.state.fontSize + 1;
+    const newFontSize = this.state.fontSize + 2;
     this.setState({ fontSize: newFontSize });
   };
   decreaseFontSize = () => {
-    const newFontSize = this.state.fontSize - 1;
+    const newFontSize = this.state.fontSize - 2;
     this.setState({ fontSize: newFontSize });
   };
   setImage = thumbnailIndex => {
@@ -53,6 +53,7 @@ class App extends Component {
             topText={this.state.topText}
             bottomText={this.state.bottomText}
             fontSize={this.state.fontSize}
+            botFontSize={this.state.fontSize}
           />
           <TextStyle
             increaseFontSize={this.increaseFontSize}

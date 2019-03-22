@@ -10,7 +10,9 @@ class Preview extends Component {
           {topText}
         </span>
         <img className="preview-img" src={currentImg} />
-        <span className="bottom-text">{bottomText}</span>
+        <span className="bottom-text" style={{ fontSize }}>
+          {bottomText}
+        </span>
       </div>
 
       // <div className="preview-image" style={{backgroundImage: `url(${currentImg})`}}>
