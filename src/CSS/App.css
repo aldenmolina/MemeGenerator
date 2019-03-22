@@ -41,6 +41,7 @@ main div {
     text-align: center;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     cursor: pointer;
+    font-family: 'Impact';
 }
 
 .preview-img {
@@ -55,8 +56,8 @@ main div {
 
 .bottom-text {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    /* bottom: 0;
+    left: 0; */
 }
 
 .text-field {
