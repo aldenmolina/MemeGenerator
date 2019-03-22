@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin 0;
+    padding: 0px;
+    margin: 0px;
 }
 
 html {
@@ -9,26 +9,52 @@ html {
 }
 
 .container {
-    display: grid;
-    grid-template-rows: 10rem 1fr 10rem;
-    width: 100vw;
-}
-
-header {
-    display: none;
-    background: #333;
+    display: flex;
+    align-items: center;
+    background: #282c34;
+    height: 100vh;
 }
 
 main {
-    grid-row-start: 2;
-    background: #777;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100vw;
 }
 
-footer {
-    display: none;
+main div {
+    height: 100%;
 }
 
-.preview img {
-    height: 100px;
-    width: 100px;
+.preview-container {
+    position: relative;
+    width: 500px;
+}
+
+.preview-container span {
+    color: white;
+    font-size: 5rem;
+}
+
+.preview-img {
+    width: 100%;
+}
+
+.top-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bottom-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.text-field {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
 }
