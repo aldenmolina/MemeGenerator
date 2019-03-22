@@ -18,7 +18,7 @@ class App extends Component {
       currentImg: "/Images/Batman.jpg",
       topText: "Goodbye",
       bottomText: "Hello",
-      fontSize: 26
+      fontSize: 38
     };
   }
   increaseFontSize = () => {
