@@ -1,0 +1,17 @@
+C:\Users\WeCanCodeIT\source\repos\MemeGenerator\MemeGenerator\MemeGenerator.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\WeCanCodeIT\source\repos\MemeGenerator\MemeGenerator\MemeGenerator.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\WeCanCodeIT\source\repos\MemeGenerator\MemeGenerator\MemeGenerator.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\WeCanCodeIT\source\repos\MemeGenerator\MemeGenerator\MemeGenerator.Tests\bin\Debug\netcoreapp2.1\MemeGenerator.Tests.deps.json
+C:\Users\WeCanCodeIT\source\repos\MemeGenerator\MemeGenerator\MemeGenerator.Tests\bin\Debug\netcoreapp2.1\MemeGenerator.Tests.runtimeconfig.json
+C:\Users\WeCanCodeIT\source\repos\MemeGenerator\MemeGenerator\MemeGenerator.Tests\bin\Debug\netcoreapp2.1\MemeGenerator.Tests.runtimeconfig.dev.json
+C:\Users\WeCanCodeIT\source\repos\MemeGenerator\MemeGenerator\MemeGenerator.Tests\bin\Debug\netcoreapp2.1\MemeGenerator.Tests.dll
+C:\Users\WeCanCodeIT\source\repos\MemeGenerator\MemeGenerator\MemeGenerator.Tests\bin\Debug\netcoreapp2.1\MemeGenerator.dll
+C:\Users\WeCanCodeIT\source\repos\MemeGenerator\MemeGenerator\MemeGenerator.Tests\bin\Debug\netcoreapp2.1\MemeGenerator.pdb
+C:\Users\WeCanCodeIT\source\repos\MemeGenerator\MemeGenerator\MemeGenerator.Tests\obj\Debug\netcoreapp2.1\MemeGenerator.Tests.csprojAssemblyReference.cache
+C:\Users\WeCanCodeIT\source\repos\MemeGenerator\MemeGenerator\MemeGenerator.Tests\obj\Debug\netcoreapp2.1\MemeGenerator.Tests.csproj.CoreCompileInputs.cache
+C:\Users\WeCanCodeIT\source\repos\MemeGenerator\MemeGenerator\MemeGenerator.Tests\obj\Debug\netcoreapp2.1\MemeGenerator.Tests.AssemblyInfoInputs.cache
+C:\Users\WeCanCodeIT\source\repos\MemeGenerator\MemeGenerator\MemeGenerator.Tests\obj\Debug\netcoreapp2.1\MemeGenerator.Tests.AssemblyInfo.cs
+C:\Users\WeCanCodeIT\source\repos\MemeGenerator\MemeGenerator\MemeGenerator.Tests\obj\Debug\netcoreapp2.1\MemeGenerator.Tests.csproj.CopyComplete
+C:\Users\WeCanCodeIT\source\repos\MemeGenerator\MemeGenerator\MemeGenerator.Tests\bin\Debug\netcoreapp2.1\MemeGenerator.Tests.pdb
+C:\Users\WeCanCodeIT\source\repos\MemeGenerator\MemeGenerator\MemeGenerator.Tests\obj\Debug\netcoreapp2.1\MemeGenerator.Tests.dll
+C:\Users\WeCanCodeIT\source\repos\MemeGenerator\MemeGenerator\MemeGenerator.Tests\obj\Debug\netcoreapp2.1\MemeGenerator.Tests.pdb
