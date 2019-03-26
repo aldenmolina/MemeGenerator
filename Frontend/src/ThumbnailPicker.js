@@ -8,7 +8,7 @@ class ThumbnailPicker extends Component {
   render() {
     const { thumbnails } = this.props;
     const thumbnailItems = thumbnails.map(item => (
-      <img src={item} onClick={this.setPreview} />
+      <img src={item} onClick={this.setPreview} key={item} />
     ));
 
     return <div className="thumbnail-items">{thumbnailItems}</div>;
