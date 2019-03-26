@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import domtoimage from "dom-to-image";
+import { saveAs } from "file-saver";
 import ThumbnailPicker from "./ThumbnailPicker";
 import InputText from "./InputText";
 import Preview from "./Preview";
@@ -13,7 +15,8 @@ class App extends Component {
         "/Images/Batman.jpg",
         "/Images/Spiderman.jpg",
         "/Images/Ancient-Aliens.jpg",
-        "/Images/Bad-Luck-Brian.jpg"
+        "/Images/Bad-Luck-Brian.jpg",
+        "/Images/shaq.gif"
       ],
       currentImg: "/Images/Batman.jpg",
       topText: "Goodbye",
@@ -39,6 +42,32 @@ class App extends Component {
     this.setState({ bottomText: text });
   };
 
+  CreateImage = () => {
+    const element = document.querySelector(".preview-container");
+
+    domtoimage
+      .toPng(element)
+      .then(function(dataUrl) {
+        console.log(dataUrl);
+      })
+      .catch(function(error) {
+        console.error("Oops!", error);
+      });
+  };
+
+  DownloadImage = () => {
+    const element = document.querySelector(".preview-container");
+
+    domtoimage
+      .toBlob(element)
+      .then(function(blob) {
+        window.saveAs(blob, "meme.png");
+      })
+      .catch(function(error) {
+        console.error("oops, something went wrong!", error);
+      });
+  };
+
   render() {
     return (
       <div className="container">
@@ -55,16 +84,20 @@ class App extends Component {
             fontSize={this.state.fontSize}
             botFontSize={this.state.fontSize}
           />
-          <TextStyle
-            increaseFontSize={this.increaseFontSize}
-            decreaseFontSize={this.decreaseFontSize}
-          />
-          <InputText
-            topText={this.state.topText}
-            bottomText={this.state.bottomText}
-            setTopText={this.setTopText}
-            setBottomText={this.setBottomText}
-          />
+          <div>
+            <InputText
+              topText={this.state.topText}
+              bottomText={this.state.bottomText}
+              setTopText={this.setTopText}
+              setBottomText={this.setBottomText}
+            />
+            <TextStyle
+              increaseFontSize={this.increaseFontSize}
+              decreaseFontSize={this.decreaseFontSize}
+            />
+            <button onClick={this.CreateImage}>Create Image</button>
+            <button onClick={this.DownloadImage}>Download Image</button>
+          </div>
         </main>
       </div>
     );
