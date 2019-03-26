@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import domtoimage from "dom-to-image";
 import ThumbnailPicker from "./ThumbnailPicker";
 import InputText from "./InputText";
 import Preview from "./Preview";
@@ -39,6 +40,21 @@ class App extends Component {
     this.setState({ bottomText: text });
   };
 
+  SaveImage = () => {
+    const element = document.querySelector(".preview-container");
+
+    domtoimage
+      .toPng(element)
+      .then(function(dataUrl) {
+        var img = new Image();
+        img.src = dataUrl;
+        document.body.appendChild(img);
+      })
+      .catch(function(error) {
+        console.error("oops, something went wrong!", error);
+      });
+  };
+
   render() {
     return (
       <div className="container">
@@ -55,16 +71,19 @@ class App extends Component {
             fontSize={this.state.fontSize}
             botFontSize={this.state.fontSize}
           />
-          <TextStyle
-            increaseFontSize={this.increaseFontSize}
-            decreaseFontSize={this.decreaseFontSize}
-          />
-          <InputText
-            topText={this.state.topText}
-            bottomText={this.state.bottomText}
-            setTopText={this.setTopText}
-            setBottomText={this.setBottomText}
-          />
+          <div>
+            <InputText
+              topText={this.state.topText}
+              bottomText={this.state.bottomText}
+              setTopText={this.setTopText}
+              setBottomText={this.setBottomText}
+            />
+            <TextStyle
+              increaseFontSize={this.increaseFontSize}
+              decreaseFontSize={this.decreaseFontSize}
+            />
+            <button onClick={this.SaveImage}>Save Image</button>
+          </div>
         </main>
       </div>
     );
