@@ -3,14 +3,16 @@ using MemeGenerator;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MemeGenerator.Migrations
 {
     [DbContext(typeof(MemeContext))]
-    partial class MemeContextModelSnapshot : ModelSnapshot
+    [Migration("20190327155520_imgpaths")]
+    partial class imgpaths
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

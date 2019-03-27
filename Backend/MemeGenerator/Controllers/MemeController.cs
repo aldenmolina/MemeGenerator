@@ -23,9 +23,9 @@ namespace MemeGenerator.Controllers
         [HttpGet]
         public ActionResult<List<Meme>> Get()
         {
-            var all = memesRepo.GetAll();
-            return all;
+            return memesRepo.GetAll(); ;
         }
+
         [HttpPost]
         public ActionResult<bool> Post([FromBody] string memes)
         {

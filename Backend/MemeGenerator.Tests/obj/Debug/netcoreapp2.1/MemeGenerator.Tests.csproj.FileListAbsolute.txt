@@ -32,3 +32,20 @@ C:\Users\Joe Scheiman Local\source\repos\REACT_20190320\MemeGenerator\Backend\Me
 C:\Users\Joe Scheiman Local\source\repos\REACT_20190320\MemeGenerator\Backend\MemeGenerator.Tests\obj\Debug\netcoreapp2.1\MemeGenerator.Tests.csproj.CopyComplete
 C:\Users\Joe Scheiman Local\source\repos\REACT_20190320\MemeGenerator\Backend\MemeGenerator.Tests\obj\Debug\netcoreapp2.1\MemeGenerator.Tests.dll
 C:\Users\Joe Scheiman Local\source\repos\REACT_20190320\MemeGenerator\Backend\MemeGenerator.Tests\obj\Debug\netcoreapp2.1\MemeGenerator.Tests.pdb
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator.Tests\bin\Debug\netcoreapp2.1\MemeGenerator.Tests.deps.json
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator.Tests\bin\Debug\netcoreapp2.1\MemeGenerator.Tests.runtimeconfig.json
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator.Tests\bin\Debug\netcoreapp2.1\MemeGenerator.Tests.runtimeconfig.dev.json
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator.Tests\bin\Debug\netcoreapp2.1\MemeGenerator.Tests.dll
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator.Tests\bin\Debug\netcoreapp2.1\MemeGenerator.Tests.pdb
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator.Tests\bin\Debug\netcoreapp2.1\MemeGenerator.dll
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator.Tests\bin\Debug\netcoreapp2.1\MemeGenerator.pdb
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator.Tests\obj\Debug\netcoreapp2.1\MemeGenerator.Tests.csprojAssemblyReference.cache
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator.Tests\obj\Debug\netcoreapp2.1\MemeGenerator.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator.Tests\obj\Debug\netcoreapp2.1\MemeGenerator.Tests.AssemblyInfoInputs.cache
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator.Tests\obj\Debug\netcoreapp2.1\MemeGenerator.Tests.AssemblyInfo.cs
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator.Tests\obj\Debug\netcoreapp2.1\MemeGenerator.Tests.csproj.CopyComplete
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator.Tests\obj\Debug\netcoreapp2.1\MemeGenerator.Tests.dll
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator.Tests\obj\Debug\netcoreapp2.1\MemeGenerator.Tests.pdb

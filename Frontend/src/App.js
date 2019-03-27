@@ -5,6 +5,7 @@ import ThumbnailPicker from "./ThumbnailPicker";
 import InputText from "./InputText";
 import Preview from "./Preview";
 import TextStyle from "./TextStyle";
+import CreatedMemes from "./CreatedMemes";
 import "./CSS/App.css";
 
 class App extends Component {
@@ -21,9 +22,17 @@ class App extends Component {
       currentImg: "/Images/Batman.jpg",
       topText: "Goodbye",
       bottomText: "Hello",
-      fontSize: 38
+      fontSize: 38,
+      createdMemes: [{}]
     };
   }
+
+  componentDidMount() {
+    fetch("https://localhost:44396/api/meme")
+      .then(res => res.json())
+      .then(json => this.setState({ createdMemes: json }));
+  }
+
   increaseFontSize = () => {
     const newFontSize = this.state.fontSize + 2;
     this.setState({ fontSize: newFontSize });
@@ -99,6 +108,7 @@ class App extends Component {
             <button onClick={this.DownloadImage}>Download Image</button>
           </div>
         </main>
+        <CreatedMemes createdMemes={this.state.createdMemes} />
       </div>
     );
   }

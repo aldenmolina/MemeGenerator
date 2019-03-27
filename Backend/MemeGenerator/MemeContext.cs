@@ -26,7 +26,7 @@ namespace MemeGenerator
                 new Meme()
                 {
                     MemeId = 1,
-                    imagePath = "",
+                    imagePath = "/Images/Batman.jpg",
                     topText = "Howdy",
                     bottomText = "Peace",
                     topTextX = 0,
@@ -39,7 +39,7 @@ namespace MemeGenerator
                 new Meme()
                 {
                     MemeId = 2,
-                    imagePath = "",
+                    imagePath = "/Images/Spiderman.jpg",
                     topText = "Hola",
                     bottomText = "Ciao",
                     topTextX = 0,
