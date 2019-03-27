@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "6638079903bd22232948b6a9d2db75786a06f970"
+    "signature": "19b05201aa6c33d5beeccdea2140015d2a008113"
   },
   "compilationOptions": {
     "defines": [
@@ -31,7 +31,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1",
           "Microsoft.EntityFrameworkCore.Tools": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.1"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.1",
+          "NSubstitute": "4.0.0"
         },
         "runtime": {
           "MemeGenerator.dll": {}
@@ -40,7 +41,7 @@
           "MemeGenerator.dll": {}
         }
       },
-      "Castle.Core/4.2.1": {
+      "Castle.Core/4.3.1": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
           "System.Collections.Specialized": "4.3.0",
@@ -54,13 +55,13 @@
           "System.Xml.XmlDocument": "4.3.0"
         },
         "runtime": {
-          "lib/netstandard1.3/Castle.Core.dll": {
+          "lib/netstandard1.5/Castle.Core.dll": {
             "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.2.1.0"
+            "fileVersion": "4.3.1.0"
           }
         },
         "compile": {
-          "lib/netstandard1.3/Castle.Core.dll": {}
+          "lib/netstandard1.5/Castle.Core.dll": {}
         }
       },
       "Microsoft.AspNetCore.Razor.Design/2.1.2": {},
@@ -101,7 +102,7 @@
       },
       "Microsoft.EntityFrameworkCore.Proxies/2.1.1": {
         "dependencies": {
-          "Castle.Core": "4.2.1",
+          "Castle.Core": "4.3.1",
           "Microsoft.EntityFrameworkCore": "2.1.1"
         },
         "runtime": {
@@ -232,6 +233,21 @@
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll": {}
+        }
+      },
+      "NSubstitute/4.0.0": {
+        "dependencies": {
+          "Castle.Core": "4.3.1",
+          "System.Threading.Tasks.Extensions": "4.5.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NSubstitute.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/NSubstitute.dll": {}
         }
       },
       "NuGet.Frameworks/4.7.0": {
@@ -3568,12 +3584,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Castle.Core/4.2.1": {
+    "Castle.Core/4.3.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-XSNA0Gc1Zu33L+8+/3Tqt+aFu8QWS8UenVHZ7RenIP5wJfhoLrA4PnNscpxReeo5aBq8PDoGnV8rNaOzIOUo/w==",
-      "path": "castle.core/4.2.1",
-      "hashPath": "castle.core.4.2.1.nupkg.sha512"
+      "sha512": "sha512-8Y/eTr6GTElAGV7eAmJuhfLhGdFpNvaNrQ9UQYDScziLmX+/BLGM+9eQr0IcdNDcPN0ADmbtwT6MgecGKy4obw==",
+      "path": "castle.core/4.3.1",
+      "hashPath": "castle.core.4.3.1.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Razor.Design/2.1.2": {
       "type": "package",
@@ -3658,6 +3674,13 @@
       "sha512": "sha512-SOOsomV+rRKH9BrAK3IDs6NMT9qkpWqllF5nnd9meZsa7o7oFbJsX4hlJQaKAUgD7ACawgDfwPLNJehz7Ge2KQ==",
       "path": "microsoft.visualstudio.web.codegenerators.mvc/2.1.1",
       "hashPath": "microsoft.visualstudio.web.codegenerators.mvc.2.1.1.nupkg.sha512"
+    },
+    "NSubstitute/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CgRn/pPzB341/axAUCf+p7ZptiN1C0KJW1C412Y1OofTzEqBhV/uQBlXCzZ/XqhZF79YFpvwn2vMmZ1P3ls6kA==",
+      "path": "nsubstitute/4.0.0",
+      "hashPath": "nsubstitute.4.0.0.nupkg.sha512"
     },
     "NuGet.Frameworks/4.7.0": {
       "type": "package",

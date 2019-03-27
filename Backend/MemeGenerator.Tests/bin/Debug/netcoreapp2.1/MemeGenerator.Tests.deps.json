@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "72bf643ee9902d5d594717b274e7531abaa94691"
+    "signature": "7bf1fad6a2b29f770339057355c976002d9fb8b3"
   },
   "compilationOptions": {},
   "targets": {
@@ -11,6 +11,7 @@
           "MemeGenerator": "1.0.0",
           "Microsoft.EntityFrameworkCore.Proxies": "2.1.1",
           "Microsoft.NET.Test.Sdk": "15.9.0",
+          "NSubstitute": "4.0.0",
           "xunit": "2.4.0",
           "xunit.runner.visualstudio": "2.4.0"
         },
@@ -18,16 +19,16 @@
           "MemeGenerator.Tests.dll": {}
         }
       },
-      "Castle.Core/4.2.1": {
+      "Castle.Core/4.3.1": {
         "dependencies": {
           "System.ComponentModel": "4.3.0",
           "System.ComponentModel.TypeConverter": "4.3.0",
           "System.Diagnostics.TraceSource": "4.3.0"
         },
         "runtime": {
-          "lib/netstandard1.3/Castle.Core.dll": {
+          "lib/netstandard1.5/Castle.Core.dll": {
             "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.2.1.0"
+            "fileVersion": "4.3.1.0"
           }
         }
       },
@@ -64,7 +65,7 @@
       },
       "Microsoft.EntityFrameworkCore.Proxies/2.1.1": {
         "dependencies": {
-          "Castle.Core": "4.2.1"
+          "Castle.Core": "4.3.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Proxies.dll": {
@@ -415,6 +416,17 @@
         }
       },
       "Microsoft.Win32.Primitives/4.0.1": {},
+      "NSubstitute/4.0.0": {
+        "dependencies": {
+          "Castle.Core": "4.3.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NSubstitute.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
       "NuGet.Frameworks/4.7.0": {
         "runtime": {
           "lib/netstandard1.6/NuGet.Frameworks.dll": {
@@ -605,7 +617,8 @@
       "MemeGenerator/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Proxies": "2.1.1",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.1"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.1",
+          "NSubstitute": "4.0.0"
         },
         "runtime": {
           "MemeGenerator.dll": {}
@@ -619,12 +632,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Castle.Core/4.2.1": {
+    "Castle.Core/4.3.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-XSNA0Gc1Zu33L+8+/3Tqt+aFu8QWS8UenVHZ7RenIP5wJfhoLrA4PnNscpxReeo5aBq8PDoGnV8rNaOzIOUo/w==",
-      "path": "castle.core/4.2.1",
-      "hashPath": "castle.core.4.2.1.nupkg.sha512"
+      "sha512": "sha512-8Y/eTr6GTElAGV7eAmJuhfLhGdFpNvaNrQ9UQYDScziLmX+/BLGM+9eQr0IcdNDcPN0ADmbtwT6MgecGKy4obw==",
+      "path": "castle.core/4.3.1",
+      "hashPath": "castle.core.4.3.1.nupkg.sha512"
     },
     "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
       "type": "package",
@@ -737,6 +750,13 @@
       "sha512": "sha512-fQnBHO9DgcmkC9dYSJoBqo6sH1VJwJprUHh8F3hbcRlxiQiBUuTntdk8tUwV490OqC2kQUrinGwZyQHTieuXRA==",
       "path": "microsoft.win32.primitives/4.0.1",
       "hashPath": "microsoft.win32.primitives.4.0.1.nupkg.sha512"
+    },
+    "NSubstitute/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CgRn/pPzB341/axAUCf+p7ZptiN1C0KJW1C412Y1OofTzEqBhV/uQBlXCzZ/XqhZF79YFpvwn2vMmZ1P3ls6kA==",
+      "path": "nsubstitute/4.0.0",
+      "hashPath": "nsubstitute.4.0.0.nupkg.sha512"
     },
     "NuGet.Frameworks/4.7.0": {
       "type": "package",
