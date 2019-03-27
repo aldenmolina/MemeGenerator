@@ -11,16 +11,12 @@ class InputText extends Component {
     const { topText, bottomText } = this.props;
     return (
       <div className="text-field">
-          <input 
-            type="text" 
-            value={topText} 
-            onChange={this.onTopTextChange}
-          />
-          <input
-            type="text"
-            value={bottomText}
-            onChange={this.onBottomTextChange}
-          />
+        <input type="text" value={topText} onChange={this.onTopTextChange} />
+        <input
+          type="text"
+          value={bottomText}
+          onChange={this.onBottomTextChange}
+        />
       </div>
     );
   }

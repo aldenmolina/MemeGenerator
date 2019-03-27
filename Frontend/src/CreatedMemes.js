@@ -8,7 +8,7 @@ class CreatedMemes extends Component {
         <span
           style={{
             top: item.topTextY,
-            left: item.topTextY,
+            left: item.topTextX,
             fontSize: item.fontSize
           }}
         >
@@ -18,7 +18,7 @@ class CreatedMemes extends Component {
         <span
           style={{
             bottom: item.bottomTextY,
-            left: item.topTextY,
+            left: item.bottomTextX,
             fontSize: item.fontSize
           }}
         >

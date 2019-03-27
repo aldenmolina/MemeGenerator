@@ -89,8 +89,8 @@ main div {
   width: 500px;
 }
 
-.text-field input[type=text] {
-    height: 30px;
-    padding: 1rem;
-    margin: 1rem;
+.text-field input[type="text"] {
+  height: 30px;
+  padding: 1rem;
+  margin: 1rem;
 }

@@ -51,16 +51,41 @@ class App extends Component {
     this.setState({ bottomText: text });
   };
 
-  CreateImage = () => {
-    const element = document.querySelector(".preview-container");
+  stripPx = input => {
+    const num = input.replace("px", "");
+    return parseInt(num, 10);
+  };
 
-    domtoimage
-      .toPng(element)
-      .then(function(dataUrl) {
-        console.log(dataUrl);
+  CreateImage = () => {
+    const topSpan = document.querySelector(".top-text");
+    const bottomSpan = document.querySelector(".bottom-text");
+
+    const newMeme = {
+      imagePath: this.state.currentImg,
+      topText: this.state.topText,
+      bottomText: this.state.bottomText,
+      topTextX: this.stripPx(topSpan.style.left),
+      topTextY: this.stripPx(topSpan.style.top),
+      bottomTextX: this.stripPx(bottomSpan.style.left),
+      bottomTextY: this.stripPx(bottomSpan.style.bottom),
+      fontSize: this.state.fontSize
+    };
+
+    fetch("https://localhost:44396/api/meme", {
+      method: "POST",
+      body: JSON.stringify(newMeme),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+      .then(res => {
+        if (res.ok) {
+          const anotherMeme = [...this.state.createdMemes, newMeme];
+          this.setState({ createdMemes: anotherMeme });
+        }
       })
-      .catch(function(error) {
-        console.error("Oops!", error);
+      .catch(err => {
+        console.error(err);
       });
   };
 

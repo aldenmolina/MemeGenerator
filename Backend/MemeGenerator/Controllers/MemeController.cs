@@ -27,9 +27,9 @@ namespace MemeGenerator.Controllers
         }
 
         [HttpPost]
-        public ActionResult<bool> Post([FromBody] string memes)
+        public ActionResult<bool> Post([FromBody] Meme memes)
         {
-            //memeDb.Add(memes);
+            memesRepo.Create(memes);
             return true;
         }
     }
