@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MemeGenerator.Models;
+using MemeGenerator.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,23 +13,23 @@ namespace MemeGenerator.Controllers
     [ApiController]
     public class MemeController : ControllerBase
     {
-        private static List<string> memes = new List<string>()
+        public MemeRepository memesRepo;
+
+        public MemeController(MemeRepository memesRepo)
         {
-            "/Images/Batman.jpg",
-            "/Images/Spiderman.jpg",
-            "/Images/Ancient-Aliens.jpg",
-            "/Images/Bad-Luck-Brian.jpg"
-        };
+            this.memesRepo = memesRepo;
+        }
 
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<List<Meme>> Get()
         {
-            return memes;
+            return memesRepo.GetAll(); ;
         }
 
         [HttpPost]
-        public ActionResult<bool> Post([FromBody] string memes)
+        public ActionResult<bool> Post([FromBody] Meme memes)
         {
+            memesRepo.Create(memes);
             return true;
         }
     }

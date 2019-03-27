@@ -18,8 +18,12 @@ class Preview extends Component {
 
   onMouseDown = e => {
     this.setState({ isTopDragging: true });
-    if(this.state.listener == true){
-      document.addEventListener("mousemove", e => this.onMouseMove(e), this.setState({listener: false}));
+    if (this.state.listener == true) {
+      document.addEventListener(
+        "mousemove",
+        e => this.onMouseMove(e),
+        this.setState({ listener: false })
+      );
     }
   };
 
@@ -36,8 +40,12 @@ class Preview extends Component {
 
   onMouseDownBottom = e => {
     this.setState({ isBottomDragging: true });
-    if(this.state.bottomListener == true){
-      document.addEventListener("mousemove", e => this.onMouseMoveBottom(e), this.setState({bottomListener: false}));
+    if (this.state.bottomListener == true) {
+      document.addEventListener(
+        "mousemove",
+        e => this.onMouseMoveBottom(e),
+        this.setState({ bottomListener: false })
+      );
     }
   };
 
@@ -51,7 +59,10 @@ class Preview extends Component {
     if (!this.state.isBottomDragging) return;
     const newBottomTextLeft = this.state.bottomTextLeft + e.movementX;
     const newBottomTextBottom = this.state.bottomTextBottom - e.movementY;
-    this.setState({ bottomTextLeft: newBottomTextLeft, bottomTextBottom: newBottomTextBottom });
+    this.setState({
+      bottomTextLeft: newBottomTextLeft,
+      bottomTextBottom: newBottomTextBottom
+    });
   };
 
   render() {
@@ -72,7 +83,16 @@ class Preview extends Component {
           {topText}
         </span>
         <img className="preview-img" src={currentImg} />
-        <span className="bottom-text" style={{ left: this.state.bottomTextLeft, bottom: this.state.bottomTextBottom, fontSize }} onMouseDown={this.onMouseDownBottom} onMouseUp={this.onMouseUpBottom}>
+        <span
+          className="bottom-text"
+          style={{
+            left: this.state.bottomTextLeft,
+            bottom: this.state.bottomTextBottom,
+            fontSize
+          }}
+          onMouseDown={this.onMouseDownBottom}
+          onMouseUp={this.onMouseUpBottom}
+        >
           {bottomText}
         </span>
       </div>

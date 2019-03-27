@@ -12,3 +12,31 @@ C:\Users\WeCanCodeIT\source\repos\MemeGenerator\MemeGenerator\MemeGenerator\obj\
 C:\Users\WeCanCodeIT\source\repos\MemeGenerator\MemeGenerator\MemeGenerator\bin\Debug\netcoreapp2.1\MemeGenerator.pdb
 C:\Users\WeCanCodeIT\source\repos\MemeGenerator\MemeGenerator\MemeGenerator\obj\Debug\netcoreapp2.1\MemeGenerator.dll
 C:\Users\WeCanCodeIT\source\repos\MemeGenerator\MemeGenerator\MemeGenerator\obj\Debug\netcoreapp2.1\MemeGenerator.pdb
+C:\Users\Joe Scheiman Local\source\repos\REACT_20190320\MemeGenerator\Backend\MemeGenerator\bin\Debug\netcoreapp2.1\MemeGenerator.deps.json
+C:\Users\Joe Scheiman Local\source\repos\REACT_20190320\MemeGenerator\Backend\MemeGenerator\bin\Debug\netcoreapp2.1\MemeGenerator.runtimeconfig.json
+C:\Users\Joe Scheiman Local\source\repos\REACT_20190320\MemeGenerator\Backend\MemeGenerator\bin\Debug\netcoreapp2.1\MemeGenerator.runtimeconfig.dev.json
+C:\Users\Joe Scheiman Local\source\repos\REACT_20190320\MemeGenerator\Backend\MemeGenerator\bin\Debug\netcoreapp2.1\MemeGenerator.dll
+C:\Users\Joe Scheiman Local\source\repos\REACT_20190320\MemeGenerator\Backend\MemeGenerator\bin\Debug\netcoreapp2.1\MemeGenerator.pdb
+C:\Users\Joe Scheiman Local\source\repos\REACT_20190320\MemeGenerator\Backend\MemeGenerator\obj\Debug\netcoreapp2.1\MemeGenerator.csprojAssemblyReference.cache
+C:\Users\Joe Scheiman Local\source\repos\REACT_20190320\MemeGenerator\Backend\MemeGenerator\obj\Debug\netcoreapp2.1\MemeGenerator.csproj.CoreCompileInputs.cache
+C:\Users\Joe Scheiman Local\source\repos\REACT_20190320\MemeGenerator\Backend\MemeGenerator\obj\Debug\netcoreapp2.1\MemeGenerator.RazorAssemblyInfo.cache
+C:\Users\Joe Scheiman Local\source\repos\REACT_20190320\MemeGenerator\Backend\MemeGenerator\obj\Debug\netcoreapp2.1\MemeGenerator.RazorAssemblyInfo.cs
+C:\Users\Joe Scheiman Local\source\repos\REACT_20190320\MemeGenerator\Backend\MemeGenerator\obj\Debug\netcoreapp2.1\MemeGenerator.AssemblyInfoInputs.cache
+C:\Users\Joe Scheiman Local\source\repos\REACT_20190320\MemeGenerator\Backend\MemeGenerator\obj\Debug\netcoreapp2.1\MemeGenerator.AssemblyInfo.cs
+C:\Users\Joe Scheiman Local\source\repos\REACT_20190320\MemeGenerator\Backend\MemeGenerator\obj\Debug\netcoreapp2.1\MemeGenerator.RazorTargetAssemblyInfo.cache
+C:\Users\Joe Scheiman Local\source\repos\REACT_20190320\MemeGenerator\Backend\MemeGenerator\obj\Debug\netcoreapp2.1\MemeGenerator.dll
+C:\Users\Joe Scheiman Local\source\repos\REACT_20190320\MemeGenerator\Backend\MemeGenerator\obj\Debug\netcoreapp2.1\MemeGenerator.pdb
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator\bin\Debug\netcoreapp2.1\MemeGenerator.deps.json
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator\bin\Debug\netcoreapp2.1\MemeGenerator.runtimeconfig.json
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator\bin\Debug\netcoreapp2.1\MemeGenerator.runtimeconfig.dev.json
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator\bin\Debug\netcoreapp2.1\MemeGenerator.dll
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator\bin\Debug\netcoreapp2.1\MemeGenerator.pdb
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator\obj\Debug\netcoreapp2.1\MemeGenerator.csprojAssemblyReference.cache
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator\obj\Debug\netcoreapp2.1\MemeGenerator.csproj.CoreCompileInputs.cache
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator\obj\Debug\netcoreapp2.1\MemeGenerator.RazorAssemblyInfo.cache
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator\obj\Debug\netcoreapp2.1\MemeGenerator.RazorAssemblyInfo.cs
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator\obj\Debug\netcoreapp2.1\MemeGenerator.AssemblyInfoInputs.cache
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator\obj\Debug\netcoreapp2.1\MemeGenerator.AssemblyInfo.cs
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator\obj\Debug\netcoreapp2.1\MemeGenerator.RazorTargetAssemblyInfo.cache
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator\obj\Debug\netcoreapp2.1\MemeGenerator.dll
+C:\Users\Artie Jr\Source\repos\MemeGenerator\Backend\MemeGenerator\obj\Debug\netcoreapp2.1\MemeGenerator.pdb

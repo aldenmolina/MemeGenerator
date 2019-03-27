@@ -5,6 +5,7 @@ import ThumbnailPicker from "./ThumbnailPicker";
 import InputText from "./InputText";
 import Preview from "./Preview";
 import TextStyle from "./TextStyle";
+import CreatedMemes from "./CreatedMemes";
 import "./CSS/App.css";
 
 class App extends Component {
@@ -21,9 +22,17 @@ class App extends Component {
       currentImg: "/Images/Batman.jpg",
       topText: "Goodbye",
       bottomText: "Hello",
-      fontSize: 38
+      fontSize: 38,
+      createdMemes: [{}]
     };
   }
+
+  componentDidMount() {
+    fetch("https://localhost:44396/api/meme")
+      .then(res => res.json())
+      .then(json => this.setState({ createdMemes: json }));
+  }
+
   increaseFontSize = () => {
     const newFontSize = this.state.fontSize + 2;
     this.setState({ fontSize: newFontSize });
@@ -42,16 +51,41 @@ class App extends Component {
     this.setState({ bottomText: text });
   };
 
-  CreateImage = () => {
-    const element = document.querySelector(".preview-container");
+  stripPx = input => {
+    const num = input.replace("px", "");
+    return parseInt(num, 10);
+  };
 
-    domtoimage
-      .toPng(element)
-      .then(function(dataUrl) {
-        console.log(dataUrl);
+  CreateImage = () => {
+    const topSpan = document.querySelector(".top-text");
+    const bottomSpan = document.querySelector(".bottom-text");
+
+    const newMeme = {
+      imagePath: this.state.currentImg,
+      topText: this.state.topText,
+      bottomText: this.state.bottomText,
+      topTextX: this.stripPx(topSpan.style.left),
+      topTextY: this.stripPx(topSpan.style.top),
+      bottomTextX: this.stripPx(bottomSpan.style.left),
+      bottomTextY: this.stripPx(bottomSpan.style.bottom),
+      fontSize: this.state.fontSize
+    };
+
+    fetch("https://localhost:44396/api/meme", {
+      method: "POST",
+      body: JSON.stringify(newMeme),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+      .then(res => {
+        if (res.ok) {
+          const anotherMeme = [...this.state.createdMemes, newMeme];
+          this.setState({ createdMemes: anotherMeme });
+        }
       })
-      .catch(function(error) {
-        console.error("Oops!", error);
+      .catch(err => {
+        console.error(err);
       });
   };
 
@@ -99,6 +133,7 @@ class App extends Component {
             <button onClick={this.DownloadImage}>Download Image</button>
           </div>
         </main>
+        <CreatedMemes createdMemes={this.state.createdMemes} />
       </div>
     );
   }
