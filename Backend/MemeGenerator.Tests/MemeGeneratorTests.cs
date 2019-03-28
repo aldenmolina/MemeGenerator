@@ -22,7 +22,9 @@ namespace MemeGenerator.Tests
         [Fact] 
         public void Get_Returns_A_List_Of_Memes()
         {
-            var result = underTest.Get();
+            //var result = underTest.Get();
+            var newMeme = new Meme();
+            var result = underTest.Post(newMeme);
 
             Assert.Equal(2, result.Value.Count());
         }
