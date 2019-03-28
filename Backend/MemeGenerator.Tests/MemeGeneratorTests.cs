@@ -48,27 +48,16 @@ namespace MemeGenerator.Tests
         }
 
 
-        [Fact] 
-        public void Get_Returns_A_List_Of_Memes()
+        [Fact]
+        public void Get_Returns_List_of_Memes()
         {
-            var expectedModel = new List<Meme>();
-            testRepo.GetAll().Returns(expectedModel);
-            var newMeme = new Meme();
-            var actualModelx = underTest.Post(newMeme);
-            var actualModel = underTest.Get();
-            
-            //Assert.Equal()
-            Assert.IsType<ActionResult<List<Meme>>>(actualModel);
-        }
+            var expectedmodel = new List<Meme>() { new Meme() };
+            testRepo.GetAll().Returns(expectedmodel);
 
-        
-        [Fact] //(Skip = "Post should increase number of memes")
-        public void Post_Should_Increase_Memes_Count()
-        {
-            underTest.Post(new Meme());
             var result = underTest.Get();
 
-            Assert.Equal(4, result.Value.Count());
+            Assert.Single(result.Value);
         }
+
     }
 }
