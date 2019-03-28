@@ -21,7 +21,7 @@ namespace MemeGenerator.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<Meme>> Get()
+        public ActionResult<IEnumerable<Meme>> Get()
         {
             return memesRepo.GetAll(); ;
         }

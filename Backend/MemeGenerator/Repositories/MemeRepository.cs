@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MemeGenerator.Repositories
 {
-    public class MemeRepository 
+    public class MemeRepository : IMemeRepository
     {
         private MemeContext db;
 
