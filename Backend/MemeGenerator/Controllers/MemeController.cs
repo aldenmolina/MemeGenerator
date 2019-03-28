@@ -13,9 +13,9 @@ namespace MemeGenerator.Controllers
     [ApiController]
     public class MemeController : ControllerBase
     {
-        public MemeRepository memesRepo;
+        public IMemeRepository memesRepo;
 
-        public MemeController(MemeRepository memesRepo)
+        public MemeController(IMemeRepository memesRepo)
         {
             this.memesRepo = memesRepo;
         }
